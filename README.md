@@ -1,18 +1,46 @@
-## Getting Started
+# Calculadora IMC
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Programa em Java que calcula o Índice de Massa Corporal (IMC) a partir do peso e altura informados pelo usuário.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## O que é IMC?
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+IMC é uma medida usada para avaliar se o peso de uma pessoa está adequado em relação à sua altura. É calculado pela fórmula:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## Como o programa funciona?
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Solicita que o usuário insira o peso (em kg).  
+2. Solicita que o usuário insira a altura (em metros).  
+3. Calcula o IMC usando a fórmula acima.  
+4. Exibe o valor do IMC formatado com duas casas decimais.  
+5. Classifica o resultado em:  
+   - Abaixo do peso (IMC < 18.5)  
+   - Peso normal (18.5 ≤ IMC ≤ 24.9)  
+   - Sobrepeso (25 ≤ IMC ≤ 29.9)  
+   - Obesidade (IMC ≥ 30)  
+
+O programa utiliza `Scanner` com configuração para aceitar o ponto como separador decimal (`Locale.US`), garantindo que números decimais sejam interpretados corretamente.
+
+---
+
+## Como executar
+
+Compile e execute:
+
+```bash
+javac CalculadoraIMC.java
+java CalculadoraIMC
+```
+## Exemplo de uso  
+Digite seu peso (kg): 70.5  
+Digite a sua altura (m): 1.75  
+Seu IMC é: 23.02  
+Classificação: Peso normal.
+
+
+
+
